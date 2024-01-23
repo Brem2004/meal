@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Menu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">My Favorites</a></li>
+                <li><a href="#">Meal Generator</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <div class="container">
+                <h1><i>Welcome</i> to <br> The world of <br> Tasty & Fresh Food</h1>
+                <p>Explore our delightful menu and discover your favorites.</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Your personal comments and information go here</p>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <h2>Menu</h2>
+                <p>Choose a category to see available meals.</p>
+                <ul class="category-list">
+                    <li><a href="#appetizers">Appetizers</a></li>
+                    <li><a href="#salads">Salads</a></li>
+                    <li><a href="#soups">Soups</a></li>
+                    <li><a href="#pasta">Pasta</a></li>
+                    <li><a href="#main course - chicken">Main Course - Chicken</a></li>
+                    <li><a href="#main course - beef">Main Course - Beef</a></li>
+                    <li><a href="#main course - seafood">Main Course - Seafood</a></li>
+                    <li><a href="#vegetarian">Vegetarian</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li><a href="#drinks">Drinks</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="meal-container">
+            <div class="container">
+
+            </div>
+        </section>
+        <section id="favorites-container">
+            <div class="container">
+                <h2>My Favorite Meal</h2>
+                <div class="favorite-meal" id="favorite-meal-container"></div>
+            </div>
+        </section>
+        <section id="appetizers">
+            <div class="container">
+                <h2>Appetizers</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/chicken wings.jpeg" alt="chicken wings">
+                        <p>Chicken Wings</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/OIP.jpeg" alt="Bruschetta">
+                        <p>Bruschetta</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/spring roll.jpeg" alt="Spring Roll">
+                        <p>Spring Roll</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/spinfeta mushroom.jpeg" alt="Stuffed Mushroom">
+                        <p>Stuffed Mushroom</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                        </div>
+                    <div class="dish">
+                        <img src="icons/shrimp cocktail.jpeg" alt="Shrimp Cocktail">
+                        <p>Shrimp Cocktail</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/caprese.jpeg" alt="Caprese Skewers">
+                        <p>Caprese Skewers</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/deviled eggs.jpeg" alt="Deviled Eggs">
+                        <p>Deviled Eggs</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/mozzarella sticks.jpeg" alt="Mozzarella Sticks">
+                        <p>Mozzarella Sticks</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/hummus.jpeg" alt="Hummus with pita">
+                        <p>Hummus with Pita</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/spinach.jpeg" alt="Spinach Articoke Dip">
+                        <p>Spinach Articoke Dip</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="salads">
+            <div class="container">
+                <h2>Salads</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/caesar.jpeg" alt="Caesar Salad">
+                        <p>Caesar Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/caesar salad with chicken.jpeg" alt="Caesar Salad with Grilled Chicken">
+                        <p>Caesar Salad with Grilled Chicken</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/caesar salad with shrimp.jpeg" alt="Caesar Salad with Shrimp">
+                        <p>Caesar Salad with Shrimp</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/chi.jpeg" alt="Chicken Caesar Salad">
+                        <p>Chicken Caesar Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/greek.jpeg" alt="Greek Salad">
+                        <p>Greek Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/caprese salad.jpeg" alt="Caprese Salad">
+                        <p>Caprese Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/cobb salad.jpeg" alt="Cobb Salad">
+                        <p>Cobb Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/fruit salad.jpeg" alt="Fruits Salad">
+                        <p>Fruits Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/waldarf.jpeg" alt="Waldarf Salad">
+                        <p>Waldarf Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/tuna salad.jpeg" alt="Tuna Nicoise Salad">
+                        <p>Tuna Nicoise Salad</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Soups">
+            <div class="container">
+                <h2>Soups</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/chicken noodle soup.jpeg" alt="Chicken Noodle Soup">
+                        <p>Chicken Noodle Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/clam soup.jpeg" alt="Clam Chowder">
+                        <p>Clam Chowder</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/broccoli soup.jpeg" alt="Broccoli Cheddar Soup">
+                        <p>Broccoli Cheddar Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/gazpacho.jpeg" alt="Gazpacho">
+                        <p>Gazpacho</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lentil.jpeg" alt="Lentil Soup">
+                        <p>Lentil Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/onion soup.jpeg" alt="French Onion Soup">
+                        <p>French Onion Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/minestrone.jpeg" alt="Minestrone Soup">
+                        <p>Minestrone Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/mushroom soup.jpeg" alt="Mushroom Soup">
+                        <p>Mushroom Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/tomato basil.jpeg" alt="Tomato Basil Soup">
+                        <p>Tomato Basil Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/potato soup.jpeg" alt="Potato Soup">
+                        <p>Potato Soup</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Pasta">
+            <div class="container">
+                <h2>Pasta</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/carbonara.jpeg" alt="Carbonara">
+                        <p>Carbonara</p>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/fettucine.jpeg" alt="Fettucine Alfredo">
+                        <p>Fettucine Alfredo</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/gnocchi.jpeg" alt="Gnocchi with Sage Butter">
+                        <p>Gnocchi with Sage Butter</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lasagna.jpeg" alt="Lasagna">
+                        <p>Lasagna</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/macaroni.jpeg" alt="Macaroni and Cheese">
+                        <p>Macaroni and Cheese</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/penne.jpeg" alt="Penne Alla Vodka">
+                        <p>Penne Alla Vodka</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/pesto.jpeg" alt="Pesto Pasta">
+                        <p>Pesto Pasta</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/shrimp scampi.jpeg" alt="Shrimp Scampi">
+                        <p>Shrimp Scampi</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/seafood.jpeg" alt="Seafood Linguine">
+                        <p>Seafood Linguine</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/bolognese.jpeg" alt="Spaghetti Bolognese">
+                        <p>Spaghetti Bolognese</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Chicken">
+            <div class="container">
+                <h2>Main Course - Chicken</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/grilled chicken breast.jpeg" alt="Grilled Chicken Breast">
+                        <p>Grilled Chicken Breast</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/parmesan.jpeg" alt="Chicken Parmesan">
+                        <p>Chicken Parmesan</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lemon herb chicken.jpeg" alt="Lemon Herb Chicken">
+                        <p>Lemon Herb Chicken</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/marsala.jpeg" alt="Chicken Marsala">
+                        <p>Chicken Marsala</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/bbq.jpeg" alt="BBQ Chicken">
+                        <p>BBQ Chicken</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/chicken alfredo.jpeg" alt="Chicken Alfredo">
+                        <p>Chicken Alfredo</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/piccato.jpeg" alt="Chicken Piccato">
+                        <p>Chicken Piccato</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/fajitas.jpeg" alt="Chicken Fajitas">
+                        <p>Chicken Fajitas</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/honey mustard.jpeg" alt="Honey Mustard Glazed Chicken">
+                        <p>Honey Mustard Glazed Chicken</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/teriyaki.jpeg" alt="Teriyaki Chicken">
+                        <p>Teriyaki Chicken</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Beef">
+            <div class="container">
+                <h2>Main Course - Beef</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/filet.jpeg" alt="Filet Mignon">
+                        <p>Filet Mignon</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/beef stronganoff.jpeg" alt="Beef Stronganoff">
+                        <p>Beef Stronganoff</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/grilled steak.jpeg" alt="Grilled Steak with Chimichurri">
+                        <p>Grilled Steak with Chimichurri</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/beef tacos.jpeg" alt="Beef Tacos">
+                        <p>Beef Tacos</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/beef and broccoli.jpeg" alt="Beef and Broccoli Stir-Fry">
+                        <p>Beef and Broccoli Stir-Fry</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/slow cook.jpeg" alt="Slow Cooker Pot Roast">
+                        <p>Slow Cooker Pot Roast</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/bbq beef.jpeg" alt="BBQ Beef">
+                        <p>BBQ Beef</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/philly.jpeg" alt="Philly Cheesesteak">
+                        <p>Philly Cheesesteak</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/chili con.jpeg" alt="Chili Con Carne">
+                        <p>Chili Con Carne</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/korean bbq beef.jpeg" alt="Korean BBQ Beef">
+                        <p>Korean BBQ Beef</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Seafoods">
+            <div class="container">
+                <h2>Main Course - Seafoods</h2>
+                    <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/grilled salmon.jpeg" alt="Grilled Salmon">
+                        <p>Grilled Salmon</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/shrimp scampi seafood.jpeg" alt="Shrimp Scampi">
+                        <p>Shrimp Scampi</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lobster tail.jpeg" alt="Lobster Tail">
+                        <p>Lobster Tail</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/seared tuna.jpeg" alt="Seared Ahi Tuna">
+                        <p>Seared Ahi Tuna</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/garlic butter.jpeg" alt="Garlic Butter Baked Cod">
+                        <p>Garlic Butter Baked Cod</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/paella.jpeg" alt="Paella">
+                        <p>Paella</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/coconut shrimp.jpeg" alt="Coconut Shrimp">
+                        <p>Coconut Shrimp</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/cloppino.jpeg" alt="Cloppino">
+                        <p>Cloppino</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/teriyaki salmon.jpeg" alt="Teriyaki Glazed Salmon">
+                        <p>Teriyaki Glazed Salmon</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/crab cake.jpeg" alt="Crab Cake">
+                        <p>Crab Cake</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>       
+         <section id="Vegetarian">
+            <div class="container">
+                <h2>Vegetarian</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/eggplant.jpeg" alt="Eggplant Parmesan">
+                        <p>Eggplant Parmesan</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/vege stir fry.jpeg" alt="Vegetarian Stir-Fry">
+                        <p>Vegetarian Stir-Fry</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/stuffed bell.jpeg" alt="Stuffed Bell Peppers">
+                        <p>Stuffed Bell Peppers</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/quinoa.jpeg" alt="Quinoa and Black Bean Bowl">
+                        <p>Quinoa and Black Bean Bowl</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lentil moussaka.jpeg" alt="Lentil Moussaka">
+                        <p>Lentil Moussaka</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/portobella.jpeg" alt="Portobella Mushroom Burger">
+                        <p>Portobella Mushroom Burger</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/veggie pizza.jpeg" alt="Veggie Pizza">
+                        <p>Veggie Pizza</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/chickpea.jpeg" alt="Chickpea Curry">
+                        <p>Chickpea Curry</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/spinfeta mushroom.jpeg" alt="Spinach and Feta Stuffed Mushroom">
+                        <p>Spinach and Feta Stuffed Mushroom</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Desserts">
+            <div class="container">
+                <h2>Desserts</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/chocolate cake.jpeg" alt="Chocolate Cake">
+                        <p>Chocolate Cake</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/apple pie.jpeg" alt="Apple Pie">
+                        <p>Apple Pie</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/tiramisu.jpeg" alt="Tiramisu">
+                        <p>Tiramisu</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/cheesecake.jpeg" alt="Cheesecake">
+                        <p>Cheesecake</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lemon sorbet.jpeg" alt="Lemon Sorbet">
+                        <p>Lemon Sorbet</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/strawberry.jpeg" alt="Strawberry Shortcake">
+                        <p>Strawberry Shortcake</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/molten lava cake.jpeg" alt="Molten Lava Cake">
+                        <p>Molten Lava Cake</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/key lime pie.jpeg" alt="Key Lime Pie">
+                        <p>Key Lime Pie</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/red velvet cupcakes.jpeg" alt="Red Velvet Cupcakes">
+                        <p>Red Velvet Cupcakes</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/banana split.jpeg" alt="Banana Split">
+                        <p>Banana Split</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Drinks">
+            <div class="container">
+                <h2>Drinks</h2>
+                <div class="dish-list">
+                    <div class="dish">
+                        <img src="icons/multi fruit smoothie.jpeg" alt="Multi Fruit Smoothie">
+                        <p>Multi Fruit Smoothie</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/classic hot chocolate.jpeg" alt="Classic Hot Chocolate">
+                        <p>Classic Hot Chocolate</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/ginger ale.jpeg" alt="Ginger Ale">
+                        <p>Ginger Ale</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/strawberry basil infused water.jpeg" alt="Strawberry Basil Infused Water">
+                        <p>Strawberry Basil Infused Water</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/vanilla milkshake.jpeg" alt="Vanilla Milkshake">
+                        <p>Vanilla Milkshake</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/rice drink.jpeg" alt="Rice Drink">
+                        <p>Rice Drink</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/berry bliss cooler.jpeg" alt="Berry Bliss Cooler">
+                        <p>Berry Bliss Cooler</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/iced latte.jpeg" alt="Iced Latte">
+                        <p>Iced Latte</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/lemon lime flavored water.jpeg" alt="Lemon-lime Flavored Water">
+                        <p>Lemon-lime Flavored Water</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                    <div class="dish">
+                        <img src="icons/cappuccino.jpeg" alt="Cappuccino">
+                        <p>Cappuccino</p>
+                        <button onclick="addtofavorite">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2023 Store Menu App
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
